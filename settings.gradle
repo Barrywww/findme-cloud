@@ -1,0 +1,6 @@
+rootProject.name = 'findme-cloud-multimodule'
+
+includeBuild 'build-conventions'
+
+include 'registry'
+include 'location-service'

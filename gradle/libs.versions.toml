@@ -1,0 +1,13 @@
+[versions]
+spring-boot = "3.2.3"
+spring-cloud = "2023.0.0"
+spring-dependency-managment = "1.1.4"
+
+[libraries]
+spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "spring-boot" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "spring-boot" }
+spring-eureka-server = { module = "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server", version.ref = "spring-cloud" }
+
+[plugins]
+spring-boot-plugin = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "spring-boot" }
+spring-boot-dependency-management = { module = "io.spring.gradle:dependency-management-plugin", version.ref = "spring-dependency-managment" }
