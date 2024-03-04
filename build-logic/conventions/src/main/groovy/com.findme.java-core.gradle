@@ -1,11 +1,15 @@
 plugins {
-    id 'java'
+    id "java"
 }
 
-group = 'com.findme'
+group = "com.findme"
 
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(17))
     }
+}
+
+dependencies {
+    compileOnly(libs.jetbrains.annotations)
 }

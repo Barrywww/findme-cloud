@@ -1,6 +1,23 @@
-rootProject.name = 'findme-cloud-multimodule'
+import org.gradle.api.initialization.resolve.RepositoriesMode
 
-includeBuild 'build-conventions'
+pluginManagement {
+    includeBuild("build-logic")
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        google()
+    }
+}
 
-include 'registry'
-include 'location-service'
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+rootProject.name = "findme-cloud-multimodule"
+
+include "registry"
+//include 'location-service'

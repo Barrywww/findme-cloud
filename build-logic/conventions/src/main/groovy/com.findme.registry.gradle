@@ -1,11 +1,9 @@
 plugins {
-    id 'java'
-    alias libs.plugins.spring.boot.plugin
-    alias libs.plugins.spring.boot.dependency.management
+    id "java"
+    id "com.findme.java-core"
+    alias(libs.plugins.spring.boot.plugin)
+    alias(libs.plugins.spring.dependency.management)
 }
-
-group = 'com.findme'
-version = '0.0.1-SNAPSHOT'
 
 dependencies {
     implementation libs.spring.boot.starter
@@ -19,6 +17,6 @@ dependencyManagement {
     }
 }
 
-tasks.named('test') {
+tasks.named("test") {
     useJUnitPlatform()
 }
