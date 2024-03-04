@@ -1,13 +1,16 @@
 [versions]
 spring-boot = "3.2.3"
 spring-cloud = "2023.0.0"
+spring-cloud-eureka = "4.1.0"
 spring-dependency-managment = "1.1.4"
 jetbrains-annotations = "24.0.1"
 
 [libraries]
-spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "spring-boot" }
+spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter", version.ref = "spring-boot" }
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "spring-boot" }
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "spring-boot" }
-spring-eureka-server = { module = "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server", version.ref = "spring-cloud" }
+spring-eureka-server = { module = "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server", version.ref = "spring-cloud-eureka" }
+spring-eureka-client = { module = "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client", version.ref = "spring-cloud-eureka" }
 spring-boot-plugin = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "spring-boot" }
 spring-dependency-management-plugin = { module = "io.spring.gradle:dependency-management-plugin", version.ref = "spring-dependency-managment" }
 jetbrains-annotations = { module = "org.jetbrains:annotations", version.ref = "jetbrains-annotations" }

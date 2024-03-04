@@ -2,9 +2,11 @@ plugins {
     id "groovy-gradle-plugin"
 }
 
-//repositories {
-//    gradlePluginPortal()
-//}
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
 
 dependencies {
     implementation libs.spring.boot.plugin
