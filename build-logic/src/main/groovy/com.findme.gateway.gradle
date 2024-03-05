@@ -1,0 +1,15 @@
+plugins {
+    id "com.findme.java-core"
+    id("org.springframework.boot") apply false
+    id("io.spring.dependency-management")
+}
+
+dependencies {
+    implementation libs.spring.cloud.gateway
+    implementation libs.spring.eureka.client
+    testImplementation libs.spring.boot.starter.test
+}
+
+tasks.named("test") {
+    useJUnitPlatform()
+}

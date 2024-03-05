@@ -20,4 +20,5 @@ dependencyResolutionManagement {
 rootProject.name = "findme-cloud-multimodule"
 
 include "registry"
+include "gateway"
 include 'location-service'
